@@ -3,6 +3,7 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Simply the artifact path
+RUN cd java-maven-sonar-argocd-helm-k8s/spring-boot-app
 ARG artifact=target/spring-boot-web.jar
 
 WORKDIR /opt/app
